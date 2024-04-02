@@ -1,0 +1,57 @@
+div{
+	height:200px;
+	width:200px;
+	background:red;
+}
+
+#box1{
+	position:absolute;
+	top:100px;
+	left:100px;
+	animation-name:soft;
+	animation-duration:0.5s;
+	/*animation-timing-function: ease-in;*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes soft{
+	from{ background:red; }
+	to{background:green}
+}
+
+#box2{
+	position:absolute;
+	top:400px;
+	left:100px;
+	animation-name:move;
+	animation-duration:3s;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	/* or animation shorhand property
+          animation:move 2s infinite normal;
+	*/
+}
+
+@keyframes move{
+	from{ left:0; }
+	to{ left: 100px }
+}
+
+#box3{
+	position:absolute;
+	top:700px;
+	left:100px;
+	animation-name:frame;
+	animation-duration:3s;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+@keyframes frame{
+	0%{ left:0 }
+	50%{ background:purple; }
+	100%{ left: 100px; }
+}
